@@ -39,6 +39,7 @@ C. SUNIL GAVASKAR                   D. RAHUL DRAVID \n""")
 
 def chkans(a):
     ans = str(input("GIVE YOUR OPTION: "))
+    ans = ans.upper()
     if a == 1 and ans == 'B' :
         return True
     elif a == 2 and ans == 'C' :
@@ -49,7 +50,7 @@ def chkans(a):
         return True
     elif a == 5 and ans == 'A' :
         return True
-    elif ans.upper() == "QUIT" :
+    elif ans == "QUIT" :
         return False
 
 def rtwr(f1):
